@@ -35,16 +35,11 @@ export default async function ServiceDetailPage({ params }: Props) {
         <div className="grid gap-10 lg:grid-cols-[1.4fr_0.8fr]">
           <div>
             <h2 className="text-3xl">About This Service</h2>
-            <p className="mt-4 text-base leading-relaxed text-muted">
-              {service.fullDescription}
-            </p>
+            <p className="mt-4 text-base leading-relaxed text-muted">{service.fullDescription}</p>
             <h3 className="mt-10 text-2xl">Benefits</h3>
             <ul className="mt-4 space-y-3">
               {service.benefits.map((benefit) => (
-                <li
-                  key={benefit}
-                  className="border-l-2 border-primary pl-4 text-sm text-muted"
-                >
+                <li key={benefit} className="border-l-2 border-primary pl-4 text-sm text-muted">
                   {benefit}
                 </li>
               ))}
@@ -59,8 +54,7 @@ export default async function ServiceDetailPage({ params }: Props) {
           <aside
             className="min-h-72 border border-border bg-cover bg-center"
             style={{
-              backgroundImage:
-                "linear-gradient(160deg, rgba(15,118,110,0.25), rgba(15,31,28,0.15)), url('/images/placeholders/service.svg')",
+              backgroundImage: `linear-gradient(160deg, rgba(15,118,110,0.25), rgba(15,31,28,0.15)), url('${service.imgSrc || "/images/placeholders/service.svg"}')`,
             }}
             role="img"
             aria-label={`${service.title} placeholder`}

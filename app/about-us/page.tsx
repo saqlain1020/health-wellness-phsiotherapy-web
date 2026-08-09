@@ -49,9 +49,9 @@ export default function AboutPage() {
         <SectionHeading
           eyebrow="Our Team"
           title="Meet Our Expert Team"
-          description="Licensed professionals with specialized training to support your recovery."
+          description="Founders and licensed physiotherapists leading your recovery."
         />
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2">
           {team.map((member) => (
             <article
               key={member.name}
@@ -68,12 +68,7 @@ export default function AboutPage() {
               />
               <h3 className="text-xl">{member.name}</h3>
               <p className="mt-1 text-sm font-medium text-primary">{member.role}</p>
-              <p className="mt-3 text-sm text-muted">
-                Experience: {member.experience}
-              </p>
-              <p className="mt-1 text-sm text-muted">
-                Specialization: {member.specialization}
-              </p>
+              <p className="mt-3 text-sm text-muted">{member.specialization}</p>
             </article>
           ))}
         </div>

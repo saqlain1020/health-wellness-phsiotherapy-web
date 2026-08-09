@@ -63,7 +63,7 @@ export function ContactForm() {
           <Select
             id="preferredLocation"
             name="preferredLocation"
-            defaultValue="Tariq-Road"
+            defaultValue="Shadman"
           >
             {LOCATION_OPTIONS.map((option) => (
               <option key={option.value} value={option.value}>

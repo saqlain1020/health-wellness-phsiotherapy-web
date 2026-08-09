@@ -5,12 +5,12 @@ export const site = {
   fullName: "Health and Wellness Physiotherapy Healing Center",
   description:
     "Comprehensive physical therapy and rehabilitation services across Karachi, including clinic and home-based care.",
-  phonePrimary: "+92 323 9571533",
-  phonePrimaryHref: "tel:+923239571533",
-  phoneSecondary: "+92 334 3655597",
-  phoneSecondaryHref: "tel:+923343655597",
-  hours: "Mon–Sat: 11AM – 11PM",
-  hoursShort: "Mon-Sat 11AM to 11PM",
+  phonePrimary: "0324-1458751",
+  phonePrimaryHref: "tel:+923241458751",
+  phoneSecondary: "0325-7269231",
+  phoneSecondaryHref: "tel:+923257269231",
+  hours: "Mon–Sat: 5PM – 8PM",
+  hoursShort: "Mon-Sat 5PM to 8PM",
   emailPlaceholder: "info@physiohealinghealthcentre.com",
   url: "https://www.physiohealinghealthcentre.com",
 } as const;

@@ -22,10 +22,10 @@ export default function ContactPage() {
         <SectionHeading
           eyebrow="Visit Us"
           title="Visit Us Today! Or Get Home Based Service"
-          description="Clinic care at Tariq Road and DHA Phase V, plus home-based physiotherapy across Karachi."
+          description="Clinic care in Shadman, plus home-based physiotherapy across Karachi."
         />
 
-        <div className="mt-10 grid gap-6 lg:grid-cols-2">
+        <div className="mt-10 max-w-2xl">
           {locations.map((location) => (
             <article
               key={location.id}

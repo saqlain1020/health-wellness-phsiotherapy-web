@@ -1,40 +1,21 @@
 export type TeamMember = {
   name: string;
   role: string;
-  experience: string;
   specialization: string;
 };
 
 export const team: TeamMember[] = [
   {
-    name: "Dr. Selal Ahmed",
-    role: "Head of Geriatric in Liaquat National Hospital",
-    experience: "8+ years",
-    specialization: "Internal Medicine & Geriatrics",
+    name: "Dr. Aimen Riaz PT",
+    role: "Physiotherapist · Co-Founder & Managing Partner",
+    specialization:
+      "Founder, owner, and clinic manager focused on personalized physiotherapy and recovery care.",
   },
   {
-    name: "Dr. Noor Ul Ain (PT) (DPT),(DFT)",
-    role: "Pain Management Specialist",
-    experience: "5+ years",
-    specialization: "Antenatal & Postnatal Exercise Specialist - Educord",
-  },
-  {
-    name: "Dr. Hussain Yasir Ali (PT)",
-    role: "Rehab Specialist",
-    experience: "8+ years",
-    specialization: "Chiropractor, Physiotherapist, Acupuncturist",
-  },
-  {
-    name: "Dr. Mehwish Khan (PT)",
-    role: "CCRP, CHPE",
-    experience: "8+ years",
-    specialization: "Certified Kinesiology taping from UK",
-  },
-  {
-    name: "Dr. Quratulain Qureshi (PT)",
-    role: "BSPT, CHPE",
-    experience: "6+ years",
-    specialization: "Certified Manual Therapy from UK",
+    name: "Dr. Ali Raza Khan PT",
+    role: "Physiotherapist · Co-Founder & Owner",
+    specialization:
+      "Founder, owner, and practice manager dedicated to hands-on treatment and clinic operations.",
   },
 ];
 

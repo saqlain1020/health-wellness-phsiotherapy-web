@@ -200,7 +200,7 @@ export default function HomePage() {
 
       <CtaBanner
         title="Whether injury came from sport, work, or a fall — we're ready to help."
-        description="Book an appointment at either clinic location or request home-based physiotherapy across Karachi."
+        description="Book an appointment at our Shadman clinic or request home-based physiotherapy across Karachi."
         primaryHref="/book-appointment"
         primaryLabel="Book an Appointment"
         secondaryHref="/contact-us"
@@ -213,9 +213,9 @@ export default function HomePage() {
         <SectionHeading
           eyebrow="Locations"
           title={homeServiceNote}
-          description="Two clinic locations plus home-based service across Karachi."
+          description="Our Shadman clinic plus home-based service across Karachi."
         />
-        <div className="mt-10 grid gap-6 lg:grid-cols-2">
+        <div className="mt-10 max-w-2xl">
           {locations.map((location) => (
             <article
               key={location.id}

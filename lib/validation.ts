@@ -4,7 +4,7 @@ export const contactSchema = z.object({
   name: z.string().trim().min(2, "Please enter your full name"),
   email: z.string().trim().email("Please enter a valid email"),
   phone: z.string().trim().optional().default(""),
-  preferredLocation: z.enum(["Tariq-Road", "DHA-Phase-V", "Home-Service"]),
+  preferredLocation: z.enum(["Shadman", "Home-Service"]),
   subject: z.string().trim().optional().default(""),
   message: z.string().trim().min(10, "Please describe your inquiry"),
 });
@@ -16,7 +16,7 @@ export const appointmentSchema = z.object({
   lastName: z.string().trim().min(1, "Last name is required"),
   email: z.string().trim().email("Please enter a valid email"),
   phone: z.string().trim().min(7, "Please enter a phone number"),
-  preferredLocation: z.enum(["Tariq-Road", "DHA-Phase-V", "Home-Service"]),
+  preferredLocation: z.enum(["Shadman", "Home-Service"]),
   serviceType: z.string().trim().min(1, "Please select a service"),
   preferredDate: z.string().trim().min(1, "Please select a date"),
   preferredTime: z.string().trim().min(1, "Please select a time"),
@@ -30,24 +30,11 @@ export const appointmentSchema = z.object({
 export type AppointmentInput = z.infer<typeof appointmentSchema>;
 
 export const LOCATION_OPTIONS = [
-  { value: "Tariq-Road", label: "Tariq Road" },
-  { value: "DHA-Phase-V", label: "DHA Phase V" },
+  { value: "Shadman", label: "Shadman" },
   { value: "Home-Service", label: "Home Service" },
 ] as const;
 
 export const TIME_SLOTS = [
-  "11:00 AM",
-  "11:30 AM",
-  "12:00 PM",
-  "12:30 PM",
-  "1:00 PM",
-  "1:30 PM",
-  "2:00 PM",
-  "2:30 PM",
-  "3:00 PM",
-  "3:30 PM",
-  "4:00 PM",
-  "4:30 PM",
   "5:00 PM",
   "5:30 PM",
   "6:00 PM",
@@ -55,12 +42,6 @@ export const TIME_SLOTS = [
   "7:00 PM",
   "7:30 PM",
   "8:00 PM",
-  "8:30 PM",
-  "9:00 PM",
-  "9:30 PM",
-  "10:00 PM",
-  "10:30 PM",
-  "11:00 PM",
 ] as const;
 
 export const PAIN_LEVELS = [

@@ -24,7 +24,7 @@ export function Hero() {
         className="absolute inset-0 bg-cover bg-center transition-opacity duration-700"
         style={{
           backgroundImage:
-            "linear-gradient(120deg, rgba(8,35,32,0.82), rgba(15,118,110,0.45)), url('/images/hero.jpg')",
+            "linear-gradient(120deg, rgba(8,35,32,0.82), rgba(15,118,110,0.45)), url('/images/banner.jpeg')",
         }}
       />
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(204,251,241,0.18),transparent_35%),radial-gradient(circle_at_85%_70%,rgba(217,119,6,0.15),transparent_40%)]" />

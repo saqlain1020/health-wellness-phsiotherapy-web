@@ -87,7 +87,7 @@ export function AppointmentForm() {
             id="preferredLocation"
             name="preferredLocation"
             required
-            defaultValue="Tariq-Road"
+            defaultValue="Shadman"
           >
             {LOCATION_OPTIONS.map((option) => (
               <option key={option.value} value={option.value}>

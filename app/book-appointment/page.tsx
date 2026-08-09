@@ -6,7 +6,7 @@ import { site } from "@/content/site";
 export const metadata: Metadata = {
   title: "Book an Appointment",
   description:
-    "Request a physiotherapy appointment at Tariq Road, DHA Phase V, or via home service.",
+    "Request a physiotherapy appointment at our Shadman clinic or via home service.",
 };
 
 export default function BookAppointmentPage() {
@@ -32,6 +32,10 @@ export default function BookAppointmentPage() {
                 Call us:{" "}
                 <a href={site.phonePrimaryHref} className="text-primary">
                   {site.phonePrimary}
+                </a>
+                {" · "}
+                <a href={site.phoneSecondaryHref} className="text-primary">
+                  {site.phoneSecondary}
                 </a>
               </li>
             </ul>
