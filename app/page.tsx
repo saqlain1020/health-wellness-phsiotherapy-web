@@ -82,9 +82,7 @@ export default function HomePage() {
               key={item.label}
               className={`card-lift animate-fade-up flex items-center gap-3 rounded-2xl border border-border bg-surface p-4 ${item.delay}`}
             >
-              <span
-                className={`inline-flex h-11 w-11 items-center justify-center rounded-xl ${item.tone}`}
-              >
+              <span className={`inline-flex h-11 w-11 items-center justify-center rounded-xl ${item.tone}`}>
                 <item.icon className="h-5 w-5" aria-hidden />
               </span>
               <p className="text-sm font-semibold text-accent">{item.label}</p>
@@ -113,12 +111,8 @@ export default function HomePage() {
                   <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-primary-soft text-primary transition group-hover:scale-110 group-hover:bg-primary group-hover:text-white">
                     <Icon className="h-5 w-5" aria-hidden />
                   </span>
-                  <h3 className="mt-4 text-xl transition group-hover:text-primary">
-                    {service.title}
-                  </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-muted">
-                    {service.shortDescription}
-                  </p>
+                  <h3 className="mt-4 text-xl transition group-hover:text-primary">{service.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-muted">{service.shortDescription}</p>
                   <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
                     Learn More
                     <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
@@ -156,7 +150,7 @@ export default function HomePage() {
             className="relative min-h-72 overflow-hidden rounded-3xl border border-border bg-cover bg-center shadow-lg"
             style={{
               backgroundImage:
-                "linear-gradient(160deg, rgba(15,118,110,0.35), rgba(15,31,28,0.2)), url('/images/placeholders/clinic.svg')",
+                "linear-gradient(160deg, rgba(15,118,110,0.35), rgba(15,31,28,0.2)), url('/images/img1.jpeg')",
             }}
             role="img"
             aria-label="Clinic care placeholder"
@@ -167,11 +161,7 @@ export default function HomePage() {
       <section className="relative overflow-hidden border-y border-border bg-accent text-white">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(14,165,233,0.22),transparent_35%),radial-gradient(circle_at_85%_70%,rgba(217,119,6,0.18),transparent_40%)]" />
         <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
-          <SectionHeading
-            eyebrow="Why Choose Us"
-            title="Care Designed For Faster, Safer Results"
-            tone="dark"
-          />
+          <SectionHeading eyebrow="Why Choose Us" title="Care Designed For Faster, Safer Results" tone="dark" />
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {whyChooseUs.map((item, i) => {
               const Icon = whyIcons[i % whyIcons.length];
@@ -185,12 +175,8 @@ export default function HomePage() {
                   >
                     <Icon className="h-5 w-5" aria-hidden />
                   </span>
-                  <h3 className="mt-4 font-display text-xl text-white">
-                    {item.title}
-                  </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-white/75">
-                    {item.description}
-                  </p>
+                  <h3 className="mt-4 font-display text-xl text-white">{item.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-white/75">{item.description}</p>
                 </div>
               );
             })}
@@ -217,10 +203,7 @@ export default function HomePage() {
         />
         <div className="mt-10 max-w-2xl">
           {locations.map((location) => (
-            <article
-              key={location.id}
-              className="card-lift rounded-2xl border border-border bg-surface p-6"
-            >
+            <article key={location.id} className="card-lift rounded-2xl border border-border bg-surface p-6">
               <div className="flex items-start justify-between gap-3">
                 <div>
                   <h3 className="text-2xl">{location.name}</h3>
